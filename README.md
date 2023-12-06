@@ -6,7 +6,7 @@ This repository hosts Python code for a machine learning workflow aimed at detec
 ## Data Source
 The dataset used for this project originates from Kaggle, under the title "Instagram: Detecting Fake Accounts". This dataset includes essential features for distinguishing fake profiles on Instagram. To access the data, users have two options:
 1. Download directly from Kaggle.
-2. Access a ready-to-use version from this repository (provide location/link within your repository where the data is hosted, if applicable).
+2. Access a ready-to-use version from this repository (see instagram.csv file hosted in this repository).
 
 ## Steps Included in the Code
 1. Load the Data: Initiate the process by loading the dataset into the code.
