@@ -1,43 +1,30 @@
-# Datasheet Template
-
-As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
+# Datasheet
 
 ## Motivation
+Purpose of Dataset Creation: This dataset was created for the purpose of developing a model to detect fake profiles on Instagram, a popular social media platform.
+Dataset Creators and Funding: The specific creator(s) is found in this publicly available Kaggle site https://www.kaggle.com/datasets/jasvindernotra/instagram-detecting-fake-accounts, this is of free access and unknown funding if any.
 
-- For what purpose was the dataset created? 
-- Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
-
- 
 ## Composition
+Dataset Instances: The dataset consists of Instagram user profiles. Each instance represents a user profile with features like profile picture presence, username length, number of followers, and whether the account is private.
+Number of Instances: The dataset contains 576 instances.
+Missing Data: All columns have 576 non-null entries, indicating no missing data in this dataset.
+Confidentiality: The dataset appears to be anonymized with no direct personal identifiers.
 
-- What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)? 
-- How many instances of each type are there? 
-- Is there any missing data?
-- Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?
+## Collection Process
+Data Acquisition: The dataset was likely collected from Instagram profiles, but the specific method of collection is not mentioned.
+Sampling Strategy: There is no information about the sampling strategy.
+Time Frame: The time frame of data collection is not specified.
 
-## Collection process
-
-- How was the data acquired? 
-- If the data is a sample of a larger subset, what was the sampling strategy? 
-- Over what time frame was the data collected?
-
-## Preprocessing/cleaning/labelling
-
-- Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
-- Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)? 
- 
-## Uses
-
-- What other tasks could the dataset be used for? 
-- Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms? 
-- Are there tasks for which the dataset should not be used? If so, please provide a description.
+## Preprocessing/Cleaning/Labelling
+Preprocessing Steps: The dataset seems to have undergone preprocessing as it contains numerical and categorical features ready for analysis. Details of preprocessing steps are not provided.
+Raw Data Preservation: It's unclear if the raw data was preserved alongside this processed data.
+Uses
+Potential Uses: Beyond detecting fake profiles, this dataset could be used for social media behavior analysis, studying the characteristics of active versus inactive or spam accounts.
+Composition and Collection Impact: The lack of diversity in the dataset (limited to Instagram and a small sample size) might limit its generalizability. Users should be cautious of potential biases.
+Inadvisable Uses: The dataset should not be used for purposes that invade user privacy or for making assumptions about individual behavior beyond the scope of fake profile detection.
 
 ## Distribution
-
-- How has the dataset already been distributed? 
-- Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
-
+Distribution Details: The distribution method of this dataset is not mentioned in the notebook or the dataset.
+Copyright and IP License: There is no information regarding copyright or intellectual property licenses associated with this dataset.
 ## Maintenance
-
-- Who maintains the dataset?
-
+Dataset Maintenance: The maintainer of the dataset is not identified.
