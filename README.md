@@ -1,0 +1,2 @@
+# fake_profile_detection_bayesian_hyperparameter_tuning
+machine learning model specialised in detecting and classifying fake profiles
