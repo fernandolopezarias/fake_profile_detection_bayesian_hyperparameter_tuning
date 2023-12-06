@@ -7,11 +7,11 @@
 **Model Architecture:** The model uses logistic regression. Hyperparameter tuning is conducted using the Optuna framework to optimize the regularization strength 'C'.
 
 ## Performance
-**Summary:** The model's performance was evaluated using metrics like accuracy, precision, recall, and F1 score. The best model achieved an accuracy of approximately 91.74%.
+**Summary:** The model's performance was evaluated using metrics like accuracy, precision, recall, and F1 score. The best model achieved an accuracy of approximately 87.07%.
 
 **Graph or Metrics:** (Note: A specific summary graph is not provided in the notebook. The following metrics are based on the notebook's reported performance.)
 
-**Accuracy:** ~91.74%
+**Accuracy:** ~87.07%
 Precision, Recall, F1 Score: Not explicitly mentioned but can be calculated based on the confusion matrix provided.
 
 **Data Analyzed:** The model was trained and tested on the provided Instagram dataset with 576 instances, split into training and testing sets.
