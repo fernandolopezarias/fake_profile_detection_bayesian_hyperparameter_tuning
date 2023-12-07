@@ -1,54 +1,68 @@
 # Model Card
-
 ## Model Description
-
 **Input:**
-The model inputs are features from Instagram user profiles, encompassing both numerical and categorical data. These features include:
+The model inputs are features from Instagram user profiles, which include a mix of numerical and categorical data. 
 
-1. Presence of a profile picture.
-2. Ratio of numbers to the length of the username.
-3. Number of words in the full name.
-4. Ratio of numbers to the length of the full name.
-5. Whether the name matches the username.
-6. Description length.
-7. Presence of an external URL.
-8. Privacy status of the account.
-9. Number of posts, followers, and follows.
+Key features include:
+- Presence of a profile picture
+- Ratio of numbers to the length of the username
+- Number of words in the full name
+- Ratio of numbers to the length of the full name
+- Whether the name matches the username
+- Description length
+- Presence of an external URL
+- Privacy status of the account
+- Metrics like the number of posts, followers, and follows.
 
 **Output:**
-The model outputs a binary classification indicating whether a profile is likely to be fake (1) or not (0).
+The model outputs a binary classification indicating the likelihood of a profile being fake (1) or not (0).
 
 **Model Architecture:**
-This model utilizes the Random Forest algorithm. Hyperparameter tuning is conducted using the Optuna framework to optimize parameters like the number of trees, max depth of trees, and other relevant settings.
+The model employs the Random Forest algorithm. Hyperparameter tuning is performed using the Optuna framework, optimizing parameters such as the number of trees, max depth of trees, and other relevant settings.
 
 ## Performance
 **Summary:**
-The model's performance was evaluated using metrics such as accuracy, precision, recall, and F1 score. The best model achieved notable accuracy, reflecting its effectiveness in classifying profiles.
+The model demonstrates a high level of accuracy, precision, recall, and F1 score, reflecting its effectiveness in classifying Instagram profiles.
 
-**Graph or Metrics:** (Note: A specific summary graph is not provided in the notebook. The following metrics are based on the notebook's reported performance.)
+**Metrics:**
 
-**Accuracy:** High accuracy level (specific value not provided).
-Precision, Recall, F1 Score: These metrics are evaluated but specific values are not mentioned. Can be calculated based on the model's confusion matrix.
+- Accuracy: Approximately 91.38%
+
+- Precision: 91% for non-fake profiles (0), 92% for fake profiles (1)
+
+- Recall: 94% for non-fake profiles (0), 89% for fake profiles (1)
+
+- F1 Score: 92% for non-fake profiles (0), 90% for fake profiles (1)
 
 **Data Analyzed:**
-The model was trained and tested on the Instagram dataset with 576 instances, which were split into training and testing sets.
+The model was trained and tested on the Instagram dataset, featuring 576 instances divided into training and testing sets.
+
+**Confusion Matrix:**
+
+- True Negatives (Non-Fake): 59
+
+- False Positives (Non-Fake classed as Fake): 4
+
+- False Negatives (Fake classed as Non-Fake): 6
+
+- True Positives (Fake): 47
 
 ## Limitations
 **Sample Size and Diversity:**
-The model is trained on a dataset of 576 profiles, which may not be representative of the diverse global Instagram user base.
+Trained on a dataset of 576 profiles, the model may not comprehensively represent the global diversity of Instagram users.
 
 **Generalization:**
-The model's ability to generalize to other social media platforms or varied types of fake profiles is not established.
+The model's ability to generalize to other social media platforms or different types of fake profiles remains untested.
 
 **Feature Limitation:**
-The model is dependent on the dataset's features, which may not capture all aspects of fake profiles comprehensively.
+Dependence on specific dataset features might limit the model's ability to capture all aspects of fake profile behaviors.
 
 ## Trade-offs
 **Model Simplicity vs. Complexity:**
-While Random Forest is more complex than logistic regression, it strikes a balance between interpretability and the ability to capture nuanced patterns. However, it might still miss certain complex behaviors present in fake profiles.
+Random Forest offers a balance between complexity and interpretability but may not capture extremely nuanced patterns of fake profiles.
 
 **Dataset Specificity:**
-The model is specifically tuned for the dataset in question, and its performance may vary when applied to data from different time periods or user demographics.
+While specifically tuned for the current dataset, the model's performance may vary with data from other time periods or demographics.
 
 **Bias Potential:**
-There is potential for the model to learn biases present in the dataset, which could affect its fairness and accuracy in real-world applications.
+There's a possibility of the model learning biases present in the dataset, which could impact its fairness and accuracy in real-world scenarios.
