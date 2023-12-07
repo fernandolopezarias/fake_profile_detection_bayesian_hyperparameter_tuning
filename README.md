@@ -1,4 +1,4 @@
-# Fake Profile Detection with Random Forest and Hyperparameter Tuning in Python
+# Fake Profile Detection with Random Forest and Bayesian Hyperparameter Tuning in Python
 
 ## Description
 This repository hosts Python code for a machine learning workflow aimed at detecting fake profiles using Random Forest. It encompasses the loading and preprocessing of data, exploration of different models, and the optimization of hyperparameters through Bayesian optimization with Optuna. 
